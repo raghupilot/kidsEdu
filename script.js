@@ -28,7 +28,7 @@ function populateGradeDropdown(grades) {
     sortedGrades.forEach(grade => {
         const option = document.createElement('option');
         option.value = grade;
-        option.textContent = `Class ${grade}`;
+        option.textContent = `Grade ${grade}`;
         gradeSelect.appendChild(option);
     });
 }
@@ -119,7 +119,7 @@ function handleTopicSelection(grade, subject, topic) {
     const practiceContent = document.getElementById('practice-content');
     practiceContent.innerHTML = `
         <div class="practice-intro">
-            <p>Practice materials for <strong>${topic}</strong> (Class ${grade} ${subject})</p>
+            <p>Practice materials for <strong>${topic}</strong> (Grade ${grade} ${subject})</p>
             <p>Choose what you'd like to practice:</p>
         </div>
         
@@ -203,3 +203,309 @@ function handleTopicSelection(grade, subject, topic) {
     `;
     document.head.appendChild(style);
 }
+
+const educationData = {
+    "1": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Reading", "Writing", "Grammar", "Vocabulary", "Stories"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Numbers", "Addition", "Subtraction", "Shapes", "Patterns"]
+            },
+            {
+                "name": "Environmental Studies",
+                "topics": ["Family", "Plants", "Animals", "Food", "Weather"]
+            }
+        ]
+    },
+    "2": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Reading Comprehension", "Writing Skills", "Grammar", "Vocabulary", "Stories"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Numbers up to 1000", "Addition", "Subtraction", "Multiplication", "Shapes and Patterns"]
+            },
+            {
+                "name": "Environmental Studies",
+                "topics": ["Family and Friends", "Plants", "Animals", "Food and Water", "Travel"]
+            }
+        ]
+    },
+    "3": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Reading", "Writing", "Grammar", "Literature", "Composition"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Numbers", "Fractions", "Geometry", "Measurement", "Data Handling"]
+            },
+            {
+                "name": "Environmental Studies",
+                "topics": ["Family", "Plants", "Animals", "Water", "Travel and Transport"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Reading", "Writing", "Grammar", "Literature"]
+            }
+        ]
+    },
+    "4": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Vocabulary", "Comprehension"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Numbers", "Fractions", "Decimals", "Geometry", "Measurement"]
+            },
+            {
+                "name": "Environmental Studies",
+                "topics": ["Family and Friends", "Food", "Water", "Travel", "Animals"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Reading", "Writing", "Grammar", "Literature"]
+            }
+        ]
+    },
+    "5": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Listening"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Numbers", "Geometry", "Patterns", "Data Handling", "Measurement"]
+            },
+            {
+                "name": "Environmental Studies",
+                "topics": ["Family", "Food", "Water", "Travel", "Environment"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Reading", "Writing", "Grammar", "Literature"]
+            }
+        ]
+    },
+    "6": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Reading"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Integers", "Fractions", "Decimals", "Algebra", "Geometry"]
+            },
+            {
+                "name": "Science",
+                "topics": ["Food", "Materials", "Living World", "Moving Things", "Natural Phenomena"]
+            },
+            {
+                "name": "Social Science",
+                "topics": ["History", "Geography", "Civics"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Prose", "Poetry", "Grammar", "Writing"]
+            }
+        ]
+    },
+    "7": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Reading"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Integers", "Fractions", "Algebra", "Geometry", "Data Handling"]
+            },
+            {
+                "name": "Science",
+                "topics": ["Plants", "Animals", "Matter", "Motion", "Energy"]
+            },
+            {
+                "name": "Social Science",
+                "topics": ["History", "Geography", "Civics", "Economics"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Prose", "Poetry", "Grammar", "Writing"]
+            }
+        ]
+    },
+    "8": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Reading"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Rational Numbers", "Algebra", "Geometry", "Data Handling", "Mensuration"]
+            },
+            {
+                "name": "Science",
+                "topics": ["Crop Production", "Microorganisms", "Synthetic Fibres", "Metals", "Force and Pressure"]
+            },
+            {
+                "name": "Social Science",
+                "topics": ["History", "Geography", "Civics", "Economics"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Prose", "Poetry", "Grammar", "Writing"]
+            }
+        ]
+    },
+    "9": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Reading"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Number Systems", "Algebra", "Geometry", "Statistics", "Probability"]
+            },
+            {
+                "name": "Science",
+                "topics": ["Matter", "Living World", "Motion", "Force and Laws", "Natural Resources"]
+            },
+            {
+                "name": "Social Science",
+                "topics": ["History", "Geography", "Economics", "Political Science"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Prose", "Poetry", "Grammar", "Writing"]
+            }
+        ]
+    },
+    "10": {
+        "subjects": [
+            {
+                "name": "English",
+                "topics": ["Literature", "Grammar", "Writing", "Speaking", "Reading"]
+            },
+            {
+                "name": "Mathematics",
+                "topics": ["Real Numbers", "Polynomials", "Coordinate Geometry", "Trigonometry", "Statistics"]
+            },
+            {
+                "name": "Science",
+                "topics": ["Chemical Reactions", "Life Processes", "Electricity", "Magnetic Effects", "Environment"]
+            },
+            {
+                "name": "Social Science",
+                "topics": ["History", "Geography", "Economics", "Political Science"]
+            },
+            {
+                "name": "Hindi",
+                "topics": ["Prose", "Poetry", "Grammar", "Writing"]
+            }
+        ]
+    }
+};
+
+// DOM Elements
+const gradeSelect = document.getElementById('grade-select');
+const subjectArea = document.getElementById('subject-area');
+const subjectButtons = document.getElementById('subject-buttons');
+const topicArea = document.getElementById('topic-area');
+const topicList = document.getElementById('topic-list');
+const contentArea = document.getElementById('content-area');
+const contentTitle = document.getElementById('content-title');
+const practiceContent = document.getElementById('practice-content');
+
+// Populate grade select
+function populateGrades() {
+    for (let grade = 1; grade <= 10; grade++) {
+        const option = document.createElement('option');
+        option.value = grade;
+        option.textContent = `Grade ${grade}`;
+        gradeSelect.appendChild(option);
+    }
+}
+
+// Event Listeners
+gradeSelect.addEventListener('change', function() {
+    const grade = this.value;
+    if (grade) {
+        showSubjects(grade);
+        subjectArea.style.display = 'block';
+        topicArea.style.display = 'none';
+        contentArea.style.display = 'none';
+    } else {
+        subjectArea.style.display = 'none';
+        topicArea.style.display = 'none';
+        contentArea.style.display = 'none';
+    }
+});
+
+function showSubjects(grade) {
+    subjectButtons.innerHTML = '';
+    const subjects = educationData[grade].subjects;
+    
+    subjects.forEach(subject => {
+        const button = document.createElement('button');
+        button.textContent = subject.name;
+        button.classList.add('subject-button');
+        button.addEventListener('click', () => {
+            showTopics(subject.topics);
+            highlightSelectedButton(button);
+        });
+        subjectButtons.appendChild(button);
+    });
+}
+
+function showTopics(topics) {
+    topicList.innerHTML = '';
+    topicArea.style.display = 'block';
+    
+    topics.forEach(topic => {
+        const li = document.createElement('li');
+        li.textContent = topic;
+        li.addEventListener('click', () => {
+            showContent(topic);
+            highlightSelectedTopic(li);
+        });
+        topicList.appendChild(li);
+    });
+}
+
+function showContent(topic) {
+    contentArea.style.display = 'block';
+    contentTitle.textContent = topic;
+    practiceContent.innerHTML = `<p>Practice content for ${topic} will be displayed here.</p>`;
+}
+
+function highlightSelectedButton(selectedButton) {
+    const buttons = subjectButtons.getElementsByClassName('subject-button');
+    Array.from(buttons).forEach(button => {
+        button.classList.remove('selected');
+    });
+    selectedButton.classList.add('selected');
+}
+
+function highlightSelectedTopic(selectedTopic) {
+    const topics = topicList.getElementsByTagName('li');
+    Array.from(topics).forEach(topic => {
+        topic.classList.remove('selected');
+    });
+    selectedTopic.classList.add('selected');
+}
+
+// Initialize the page
+populateGrades();
