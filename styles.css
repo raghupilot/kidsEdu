@@ -1,0 +1,179 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: 'Comic Neue', cursive;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #4285f4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Main content area */
+main {
+    padding: 30px 0;
+}
+
+/* Selection area styles */
+.selection-area {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.selection-area h2 {
+    color: #4285f4;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Subject buttons */
+#subject-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.subject-button {
+    padding: 12px 20px;
+    background-color: #ff9999;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.subject-button:hover {
+    background-color: #ff7777;
+    transform: scale(1.05);
+}
+
+/* Topic list */
+.topic-list {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.topic-list li {
+    background-color: #77dd77;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.topic-list li:hover {
+    background-color: #66cc66;
+    transform: scale(1.02);
+}
+
+/* Content area */
+.content-area {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-area h2 {
+    color: #4285f4;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #4285f4;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .selection-area h2, .content-area h2 {
+        font-size: 1.5rem;
+    }
+    
+    .subject-button {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .topic-list li {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    .selection-area, .content-area {
+        padding: 15px;
+    }
+    
+    #subject-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .subject-button {
+        width: 100%;
+    }
+}

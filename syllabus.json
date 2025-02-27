@@ -1,0 +1,130 @@
+{
+  "grades": {
+    "1": {
+      "subjects": {
+        "English": {
+          "topics": [
+            "Reading and Comprehension",
+            "Grammar Basics",
+            "Creative Writing",
+            "Spelling and Vocabulary"
+          ]
+        },
+        "Mathematics": {
+          "topics": [
+            "Numbers from 1 to 100",
+            "Addition and Subtraction",
+            "Shapes and Patterns",
+            "Measurements"
+          ]
+        },
+        "EVS": {
+          "topics": [
+            "Myself and My Body",
+            "My Family",
+            "Plants and Animals",
+            "Air, Water and Weather"
+          ]
+        }
+      }
+    },
+    "5": {
+      "subjects": {
+        "English": {
+          "topics": [
+            "Reading Comprehension",
+            "Grammar",
+            "Creative Writing",
+            "Vocabulary Building"
+          ]
+        },
+        "Mathematics": {
+          "topics": [
+            "Numbers and Operations",
+            "Fractions and Decimals",
+            "Geometry",
+            "Data Handling"
+          ]
+        },
+        "EVS": {
+          "topics": [
+            "Human Body and Health",
+            "Plants and Animals",
+            "Our Environment",
+            "Natural Resources"
+          ]
+        }
+      }
+    },
+    "10": {
+      "subjects": {
+        "Science": {
+          "topics": [
+            "Chemical Reactions and Equations",
+            "Acids, Bases and Salts",
+            "Metals and Non-metals",
+            "Carbon and its Compounds",
+            "Life Processes",
+            "Control and Coordination",
+            "Heredity and Evolution",
+            "Light - Reflection and Refraction",
+            "The Human Eye and Colorful World",
+            "Electricity",
+            "Magnetic Effects of Electric Current",
+            "Sources of Energy",
+            "Our Environment",
+            "Management of Natural Resources"
+          ]
+        },
+        "Mathematics": {
+          "topics": [
+            "Real Numbers",
+            "Polynomials",
+            "Pair of Linear Equations in Two Variables",
+            "Quadratic Equations",
+            "Arithmetic Progressions",
+            "Triangles",
+            "Coordinate Geometry",
+            "Introduction to Trigonometry",
+            "Applications of Trigonometry",
+            "Circles",
+            "Constructions",
+            "Areas Related to Circles",
+            "Surface Areas and Volumes",
+            "Statistics",
+            "Probability"
+          ]
+        },
+        "Social Science": {
+          "topics": [
+            "The Rise of Nationalism in Europe",
+            "Nationalism in India",
+            "The Making of a Global World",
+            "The Age of Industrialisation",
+            "Print Culture and the Modern World",
+            "Resources and Development",
+            "Forest and Wildlife Resources",
+            "Water Resources",
+            "Agriculture",
+            "Minerals and Energy Resources",
+            "Manufacturing Industries",
+            "Lifelines of National Economy",
+            "Power Sharing",
+            "Federalism",
+            "Democracy and Diversity",
+            "Gender, Religion and Caste",
+            "Popular Struggles and Movements",
+            "Political Parties",
+            "Outcomes of Democracy",
+            "Challenges to Democracy",
+            "Development",
+            "Sectors of the Indian Economy",
+            "Money and Credit",
+            "Globalisation and the Indian Economy",
+            "Consumer Rights"
+          ]
+        }
+      }
+    }
+  }
+}

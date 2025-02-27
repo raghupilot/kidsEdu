@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBSE Practice for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CBSE Practice for Kids</h1>
+            <p>Learn and practice your CBSE subjects and chapters!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="selection-area">
+            <div class="grade-selector">
+                <h2>Select Your Grade</h2>
+                <select id="grade-select">
+                    <option value="">Choose your grade</option>
+                    <!-- Will be populated from JSON -->
+                </select>
+            </div>
+
+            <div class="subject-selector" id="subject-area" style="display: none;">
+                <h2>Select Your Subject</h2>
+                <div id="subject-buttons"></div>
+            </div>
+
+            <div class="topic-selector" id="topic-area" style="display: none;">
+                <h2>Select a Topic to Practice</h2>
+                <ul id="topic-list" class="topic-list"></ul>
+            </div>
+        </section>
+
+        <section class="content-area" id="content-area" style="display: none;">
+            <h2 id="content-title">Practice Content</h2>
+            <div id="practice-content">
+                <p>Select a grade, subject, and topic to see practice materials.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 CBSE Practice for Kids. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
