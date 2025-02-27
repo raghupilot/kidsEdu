@@ -19,7 +19,7 @@ An interactive web application for kids to practice CBSE subjects and topics. St
 
 ## Live Demo
 
-Visit the live application at: https://YOUR-USERNAME.github.io/REPO-NAME
+Visit the live application at: https://raghupilot.github.io/kidsEdu
 
 ## Development
 
